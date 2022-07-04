@@ -12,7 +12,7 @@ const Proportion = () => {
   const timeout = () => {
     setText('');
     let timer = null;
-    let aaa = '我是一个粉刷匠，粉刷本领强';
+    let aaa = '我是一个粉刷匠，粉刷本领特别强';
     let l = 1;
     let bbb = '';
     setTimeout(() => {
