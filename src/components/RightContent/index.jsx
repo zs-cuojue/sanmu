@@ -1,6 +1,6 @@
 import { QuestionCircleOutlined } from '@ant-design/icons';
 import { Space } from 'antd';
-import { SelectLang, useModel } from 'umi';
+import { useModel } from 'umi';
 import HeaderSearch from '../HeaderSearch';
 import Avatar from './AvatarDropdown';
 import styles from './index.less';
@@ -55,7 +55,6 @@ const GlobalHeaderRight = () => {
         <QuestionCircleOutlined />
       </span>
       <Avatar />
-      <SelectLang className={styles.action} />
     </Space>
   );
 };
