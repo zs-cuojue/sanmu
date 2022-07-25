@@ -3,7 +3,7 @@ import { useRequest } from 'ahooks';
 import { Card } from 'antd';
 import { useState } from 'react';
 
-import { getTotalSales } from '@/services/ant-design-pro/api';
+import { getTotalSales } from '@/services/demo/api';
 
 import styles from './totalSales.less';
 

@@ -2,7 +2,6 @@
 import zhCN from 'antd/lib/locale/zh_CN';
 import { join } from 'path';
 import { defineConfig } from 'umi';
-import defaultSettings from './defaultSettings';
 import proxy from './proxy';
 import routes from './routes';
 const { REACT_APP_ENV } = process.env;
@@ -16,12 +15,13 @@ export default defineConfig({
   dva: {
     hmr: true,
   },
-  layout: {
-    // https://umijs.org/zh-CN/plugins/plugin-layout
-    locale: true,
-    siderWidth: 208,
-    ...defaultSettings,
-  },
+  layout: false,
+  // layout: {
+  //   // https://umijs.org/zh-CN/plugins/plugin-layout
+  //   locale: true,
+  //   siderWidth: 208,
+  //   ...defaultSettings,
+  // },
   // https://umijs.org/zh-CN/plugins/plugin-locale
   // locale: {
   //   // default zh-CN
@@ -74,7 +74,7 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
-  mfsu: {},
+  // mfsu: {},
   webpack5: {},
   exportStatic: {},
 });
