@@ -3,7 +3,7 @@ import { useRequest } from 'ahooks';
 import { Card } from 'antd';
 import { useState } from 'react';
 
-import { getTotalSales } from '@/services/demo/api';
+import { getTotalSales } from '@/services/sanmu-api/api';
 
 import styles from './totalSales.less';
 
