@@ -3,7 +3,7 @@ import { useRequest } from 'ahooks';
 import { Card } from 'antd';
 import { useState } from 'react';
 
-import { getTotalSales } from '@/services/sanmu-api/api';
+import { getTotalSales, getUserInfo } from '@/services/sanmu-api/api';
 
 import styles from './totalSales.less';
 
@@ -14,6 +14,13 @@ const TotalSales = () => {
     onSuccess: ({ success, data }) => {
       if (!success) return;
       setSalesData(data);
+    },
+  });
+
+  useRequest(() => getUserInfo(), {
+    onSuccess: ({ success, data }) => {
+      if (!success) return;
+      console.log(data);
     },
   });
 
