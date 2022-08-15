@@ -11,6 +11,6 @@ export default [
   },
   {
     path: '/',
-    redirect: '/sanmu',
+    redirect: '/monitor',
   },
 ];
